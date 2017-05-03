@@ -101,9 +101,8 @@ Other hyperparameters I used:
 Solution approach
 ---
 I started with the LeNet5 architecture. I improved the validation accuracy step by step by adjusting image preprocessing methods, network layer parameters, training hyperparameters as I've previously mentioned. The final solution accuracies are:
-
-Validation accuracy: 97.6%.
-Test set accuracy: 96.0%
+* Validation accuracy: 97.6%.
+* Test set accuracy: 96.0%
 
 Acquiring new images
 ---
@@ -120,41 +119,39 @@ Model Certainty - Softmax Probabilities
 The top 5 classification candidates for each image:
 
 Image 16.jpg top 5 classes:
-For class 16: 100.00%
-For class 9: 0.00%
-For class 10: 0.00%
-For class 3: 0.00%
-For class 42: 0.00%
+* For class 16: 100.00%
+* For class 9: 0.00%
+* For class 10: 0.00%
+* For class 3: 0.00%
+* For class 42: 0.00%
 
 Image 1.jpg top 5 classes:
-For class 1: 99.99%
-For class 2: 0.01%
-For class 0: 0.00%
-For class 5: 0.00%
-For class 4: 0.00%
+* For class 1: 99.99%
+* For class 2: 0.01%
+* For class 0: 0.00%
+* For class 5: 0.00%
+* For class 4: 0.00%
 
 Image 18.jpg top 5 classes:
-For class 18: 100.00%
-For class 27: 0.00%
-For class 26: 0.00%
-For class 25: 0.00%
-For class 11: 0.00%
+* For class 18: 100.00%
+* For class 27: 0.00%
+* For class 26: 0.00%
+* For class 25: 0.00%
+* For class 11: 0.00%
 
 Image 28.jpg top 5 classes:
-For class 28: 99.97%
-For class 29: 0.02%
-For class 30: 0.01%
-For class 20: 0.01%
-For class 24: 0.00%
+* For class 28: 99.97%
+* For class 29: 0.02%
+* For class 30: 0.01%
+* For class 20: 0.01%
+* For class 24: 0.00%
 
 Image 14.jpg top 5 classes:
-For class 14: 100.00%
-For class 33: 0.00%
-For class 34: 0.00%
-For class 17: 0.00%
-For class 1: 0.00%
-
-
+* For class 14: 100.00%
+* For class 33: 0.00%
+* For class 34: 0.00%
+* For class 17: 0.00%
+* For class 1: 0.00%
 
 
 ### Dependencies
