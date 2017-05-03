@@ -1,37 +1,71 @@
-## Project: Build a Traffic Sign Recognition Program
+## Project: Traffic Sign Classification
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 Overview
 ---
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
+In this project we train a convolutional neural network to solve a classic problem in self-driving cars - identifying traffic signs from images. We built our model on top of LeNet5 architecture and trained it using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). We then test it using the testing data from the dataset as well as images from the internet that were shot unfiltered in the real world.
 
-We have included an Ipython notebook that contains further instructions 
-and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
+The code and data we used to achieve that can be found in this repository called *Traffic_Sign_Classifier.ipynb*
 
-We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
-
-To meet specifications, the project will require submitting three files: 
-* the Ipython notebook with the code
-* the code exported as an html file
-* a writeup report either as a markdown or pdf file 
-
-Creating a Great Writeup
+Dataset Exploration
 ---
-A great writeup should include the [rubric points](https://review.udacity.com/#!/rubrics/481/view) as well as your description of how you addressed each point.  You should include a detailed description of the code used in each step (with line-number references and code snippets where necessary), and links to other supporting documents or external references.  You should include images in your writeup to demonstrate how your code works with examples.  
+The dataset is split into training data, validation data and testing data. Each example is composed of an traffic sign image and a label that describes the traffic sign class. The summary is as follows:
+* training: 34799.0 - 67.13%
+* validation: 4410 - 8.51%
+* testing: 12630 - 24.36%
+* total: 51839
+* image dimensions: 32x32x3
+* labels range: 0 - 42
 
-All that said, please be concise!  We're not looking for you to write a book here, just a brief description of how you passed each rubric point, and references to the relevant code :). 
+The distribution of classes:
+* Class 0: 270 - 0.52%
+* Class 1: 2940 - 5.67%
+* Class 2: 3000 - 5.79%
+* Class 3: 1860 - 3.59%
+* Class 4: 2640 - 5.09%
+* Class 5: 2490 - 4.80%
+* Class 6: 570 - 1.10%
+* Class 7: 1890 - 3.65%
+* Class 8: 1860 - 3.59%
+* Class 9: 1950 - 3.76%
+* Class 10: 2670 - 5.15%
+* Class 11: 1740 - 3.36%
+* Class 12: 2790 - 5.38%
+* Class 13: 2880 - 5.56%
+* Class 14: 1050 - 2.03%
+* Class 15: 840 - 1.62%
+* Class 16: 570 - 1.10%
+* Class 17: 1470 - 2.84%
+* Class 18: 1590 - 3.07%
+* Class 19: 270 - 0.52%
+* Class 20: 450 - 0.87%
+* Class 21: 420 - 0.81%
+* Class 22: 510 - 0.98%
+* Class 23: 660 - 1.27%
+* Class 24: 360 - 0.69%
+* Class 25: 1980 - 3.82%
+* Class 26: 780 - 1.50%
+* Class 27: 300 - 0.58%
+* Class 28: 690 - 1.33%
+* Class 29: 360 - 0.69%
+* Class 30: 600 - 1.16%
+* Class 31: 1050 - 2.03%
+* Class 32: 300 - 0.58%
+* Class 33: 899 - 1.73%
+* Class 34: 540 - 1.04%
+* Class 35: 1590 - 3.07%
+* Class 36: 510 - 0.98%
+* Class 37: 270 - 0.52%
+* Class 38: 2760 - 5.32%
+* Class 39: 390 - 0.75%
+* Class 40: 450 - 0.87%
+* Class 41: 300 - 0.58%
+* Class 42: 330 - 0.64%
 
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
-
-The Project
+Exploratory Visualization
 ---
-The goals / steps of this project are the following:
-* Load the data set
-* Explore, summarize and visualize the data set
-* Design, train and test a model architecture
-* Use the model to make predictions on new images
-* Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
+<img src="./examples/traffic_sign_classes.png" width="500">
+
 
 ### Dependencies
 This lab requires:
