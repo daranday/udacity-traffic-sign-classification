@@ -62,7 +62,9 @@ The distribution of classes:
 * Class 41: 300 - 0.58%
 * Class 42: 330 - 0.64%
 
-
+Exploratory Visualization
+---
+<img src="./examples/traffic_sign_classes.png" width="500">
 
 
 ### Dependencies
