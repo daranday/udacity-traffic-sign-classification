@@ -17,51 +17,51 @@ The dataset is split into training data, validation data and testing data. Each 
 * image dimensions: 32x32x3
 * labels range: 0 - 42
 
-The distribution of classes:
-*   ClassId                                                         Name      Count      Percentage
-*         0                                         Speed limit (20km/h)        270           0.52%
-*         1                                         Speed limit (30km/h)       2940           5.67%
-*         2                                         Speed limit (50km/h)       3000           5.79%
-*         3                                         Speed limit (60km/h)       1860           3.59%
-*         4                                         Speed limit (70km/h)       2640           5.09%
-*         5                                         Speed limit (80km/h)       2490           4.80%
-*         6                                  End of speed limit (80km/h)        570           1.10%
-*         7                                        Speed limit (100km/h)       1890           3.65%
-*         8                                        Speed limit (120km/h)       1860           3.59%
-*         9                                                   No passing       1950           3.76%
-*        10                 No passing for vehicles over 3.5 metric tons       2670           5.15%
-*        11                        Right-of-way at the next intersection       1740           3.36%
-*        12                                                Priority road       2790           5.38%
-*        13                                                        Yield       2880           5.56%
-*        14                                                         Stop       1050           2.03%
-*        15                                                  No vehicles        840           1.62%
-*        16                     Vehicles over 3.5 metric tons prohibited        570           1.10%
-*        17                                                     No entry       1470           2.84%
-*        18                                              General caution       1590           3.07%
-*        19                                  Dangerous curve to the left        270           0.52%
-*        20                                 Dangerous curve to the right        450           0.87%
-*        21                                                 Double curve        420           0.81%
-*        22                                                   Bumpy road        510           0.98%
-*        23                                                Slippery road        660           1.27%
-*        24                                    Road narrows on the right        360           0.69%
-*        25                                                    Road work       1980           3.82%
-*        26                                              Traffic signals        780           1.50%
-*        27                                                  Pedestrians        300           0.58%
-*        28                                            Children crossing        690           1.33%
-*        29                                            Bicycles crossing        360           0.69%
-*        30                                           Beware of ice/snow        600           1.16%
-*        31                                        Wild animals crossing       1050           2.03%
-*        32                          End of all speed and passing limits        300           0.58%
-*        33                                             Turn right ahead        899           1.73%
-*        34                                              Turn left ahead        540           1.04%
-*        35                                                   Ahead only       1590           3.07%
-*        36                                         Go straight or right        510           0.98%
-*        37                                          Go straight or left        270           0.52%
-*        38                                                   Keep right       2760           5.32%
-*        39                                                    Keep left        390           0.75%
-*        40                                         Roundabout mandatory        450           0.87%
-*        41                                            End of no passing        300           0.58%
-*        42           End of no passing by vehicles over 3.5 metric tons        330           0.64%
+| ClassId | Name                                               | Count | Percentage |
+|---------|----------------------------------------------------|-------|------------|
+| 0       | Speed limit (20km/h)                               | 270   | 0.52%      |
+| 1       | Speed limit (30km/h)                               | 2940  | 5.67%      |
+| 2       | Speed limit (50km/h)                               | 3000  | 5.79%      |
+| 3       | Speed limit (60km/h)                               | 1860  | 3.59%      |
+| 4       | Speed limit (70km/h)                               | 2640  | 5.09%      |
+| 5       | Speed limit (80km/h)                               | 2490  | 4.80%      |
+| 6       | End of speed limit (80km/h)                        | 570   | 1.10%      |
+| 7       | Speed limit (100km/h)                              | 1890  | 3.65%      |
+| 8       | Speed limit (120km/h)                              | 1860  | 3.59%      |
+| 9       | No passing                                         | 1950  | 3.76%      |
+| 10      | No passing for vehicles over 3.5 metric tons       | 2670  | 5.15%      |
+| 11      | Right-of-way at the next intersection              | 1740  | 3.36%      |
+| 12      | Priority road                                      | 2790  | 5.38%      |
+| 13      | Yield                                              | 2880  | 5.56%      |
+| 14      | Stop                                               | 1050  | 2.03%      |
+| 15      | No vehicles                                        | 840   | 1.62%      |
+| 16      | Vehicles over 3.5 metric tons prohibited           | 570   | 1.10%      |
+| 17      | No entry                                           | 1470  | 2.84%      |
+| 18      | General caution                                    | 1590  | 3.07%      |
+| 19      | Dangerous curve to the left                        | 270   | 0.52%      |
+| 20      | Dangerous curve to the right                       | 450   | 0.87%      |
+| 21      | Double curve                                       | 420   | 0.81%      |
+| 22      | Bumpy road                                         | 510   | 0.98%      |
+| 23      | Slippery road                                      | 660   | 1.27%      |
+| 24      | Road narrows on the right                          | 360   | 0.69%      |
+| 25      | Road work                                          | 1980  | 3.82%      |
+| 26      | Traffic signals                                    | 780   | 1.50%      |
+| 27      | Pedestrians                                        | 300   | 0.58%      |
+| 28      | Children crossing                                  | 690   | 1.33%      |
+| 29      | Bicycles crossing                                  | 360   | 0.69%      |
+| 30      | Beware of ice/snow                                 | 600   | 1.16%      |
+| 31      | Wild animals crossing                              | 1050  | 2.03%      |
+| 32      | End of all speed and passing limits                | 300   | 0.58%      |
+| 33      | Turn right ahead                                   | 899   | 1.73%      |
+| 34      | Turn left ahead                                    | 540   | 1.04%      |
+| 35      | Ahead only                                         | 1590  | 3.07%      |
+| 36      | Go straight or right                               | 510   | 0.98%      |
+| 37      | Go straight or left                                | 270   | 0.52%      |
+| 38      | Keep right                                         | 2760  | 5.32%      |
+| 39      | Keep left                                          | 390   | 0.75%      |
+| 40      | Roundabout mandatory                               | 450   | 0.87%      |
+| 41      | End of no passing                                  | 300   | 0.58%      |
+| 42      | End of no passing by vehicles over 3.5 metric tons | 330   | 0.64%      |
 
 Exploratory Visualization
 ---
